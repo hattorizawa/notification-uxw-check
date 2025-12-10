@@ -402,8 +402,20 @@
       font-weight: 400;
       font-size: 13.75px;
       color: #fff;
-      white-space: pre-line;
+      line-height: 16px;
+      max-height: 16px;
+      display: block;
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    body.wrap-letters .push-subtitle {
+      word-break: normal;
+      overflow-wrap: normal;
+      white-space: nowrap;
     }
 
     .no-subtitle .push-title {
